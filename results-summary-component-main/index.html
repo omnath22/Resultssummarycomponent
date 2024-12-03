@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Results summary component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .container{
+      font-family: Hanken Grotesk;
+      margin-top:250px;
+    }
+    .card{
+      width:510px;
+      margin:auto;
+      -webkit-box-shadow: 17px 23px 15px -3px rgba(204,204,204,0.59);
+-moz-box-shadow: 17px 23px 15px -3px rgba(204,204,204,0.59);
+box-shadow: 17px 23px 15px -3px rgba(204,204,204,0.59);
+border-radius: 20px !important;
+    }
+    *{
+      margin:0;
+      padding:0;
+      box-sizing: border-box;
+    }
+    .row{
+      width:100%;
+      display:flex;
+      border-radius: 20px !important;
+    }
+    .left{
+      width:50%;
+      background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));;
+  
+      border-radius: 20px;
+      padding:20px;
+      text-align: center;
+    }
+    .right{
+      width:50%;
+      padding:20px;
+      border-radius: 20px !important;
+    }
+    button{
+      border:none;
+    }
+    button:hover{
+      background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));;
+  
+    }
+    @media only screen and (max-width: 600px) {
+      .container{
+        margin-top:0px;
+      }
+      .row{
+        display:block;
+      }
+      .card{
+        width:100%;
+      }
+      .left{
+        width:100%;
+        padding:40px;
+        border-radius: 0 0 30px 30px;
+      }
+      .right{
+        width:100%;
+      }
+}
+  
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="row">
+        <div class="left">
+          <h3 style="margin-bottom: 25px;color:hsl(241, 100%, 89%)">Your Result</h3>
+          <div style="height: 160px;
+          width: 160px;
+          background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));;
+          border-radius: 50%;margin-bottom: 25px;
+          display: inline-block;padding-top: 30px;">
+          <h1 style="color: white; font-size: 50px;margin-bottom: 0;">76</h1>
+        <span style="color:hsl(241, 100%, 89%)">of 100</span>
+          </div>
+        
+          <h2 style="color: white;margin-bottom: 20px;">Great</h2>
+          <p style="color:hsl(241, 100%, 89%)">You scored higher than 65% of the people who have taken these tests.</p>
+          
+          
+        </div>
+        <div class="right">
+          <h3 style="color: hsl(224, 30%, 27%);margin-bottom:24px;">Summary</h3>
+          <div style="border-radius: 8px;display: flex;justify-content: space-between;align-items: center; text-align: center;background: hsl(0, 100%, 98%);padding:15px;margin-bottom: 17px;">
+            <div style="display:flex;align-items: center;color:hsl(0, 100%, 67%)">
+              <img src="./assets/images/icon-reaction.svg" style="margin-right: 10px;" />
+              <b>Reaction</b>
+        
+            </div>
+            <div>
+             <b>80</b>  / 100
+            </div>
+          </div>
+          <div style="border-radius: 8px;display: flex;justify-content: space-between;align-items: center; text-align: center;background: hsl(40, 100%, 98%);padding:15px;margin-bottom: 17px;">
+            <div style="display:flex;align-items: center;color:hsl(39, 100%, 56%)">
+              <img src="./assets/images/icon-memory.svg" style="margin-right: 10px;" />
+              <b>Memory</b>
+        
+            </div>
+            <div>
+             <b>92</b>  / 100
+            </div>
+          </div>
+          <div style="border-radius: 8px;display: flex;justify-content: space-between;align-items: center; text-align: center;background: hsl(165, 100%, 98%);padding:15px;margin-bottom: 17px;">
+            <div style="display:flex;align-items: center;color:hsl(166, 100%, 37%)">
+              <img src="./assets/images/icon-verbal.svg" style="margin-right: 10px;" />
+              <b>Verbal</b>
+        
+            </div>
+            <div>
+             <b>61</b>  / 100
+            </div>
+          </div>
+        
+          
+          <div style="border-radius: 8px;display: flex;justify-content: space-between;align-items: center; text-align: center;background: hsl(231, 45%, 98%);padding:15px;margin-bottom: 17px;">
+            <div style="display:flex;align-items: center;color:hsl(234, 85%, 45%)">
+              <img src="./assets/images/icon-visual.svg" style="margin-right: 10px;" />
+              <b>Visual</b>
+        
+            </div>
+            <div>
+             <b>72</b>  / 100
+            </div>
+          </div>
+        
+       
+        <button style="width:100%;padding:15px;background-color:hsl(224, 30%, 27%);color:white;border-radius: 26px;margin-top: 20px;">Continue</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+ 
+  
+
+</body>
+</html>
